@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav class="nav">
+            <a href="index.html"><img src="poze/logo2.png"></a>
+            <div class="nav-links" id = "navLinks">
+                <i class="fas fa-times" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ACASĂ</a></li>
+                    <li><a href="hidroser.html">HIDROSER</a></li>
+                    <li><a href="http://hidroser.com.tr/en-US/urunler" target="_blank">PRODUSE</a></li>
+                    <li><a href="http://hidroser.com.tr/en-US/hizmetler/hidrolik-sistem-tasarimi" target="_blank">SERVICII</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick = "showMenu()"></i>
+        </nav>
+        <p>Contact</p>
+    </section>
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d402.
+        3349941038633!2d28.635140313115585!3d44.18853017316821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
+        .1!3m3!1m2!1s0x40bae54d476f227b%3A0xe99983f6895b9adc!2sStrada%20Poporului%2036!5e0!3m2!1sro!2sro!4v1633031985926!5m2!1sro!2sro"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>Adresa</h5>
+                        <p>Strada Poporului 36, Constanta</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>Telefon</h5>
+                        <p>0749287083</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>Email</h5>
+                        <p>office@inotehnover.ro</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form.php" method="post">
+                    <input type="text" name="name" placeholder="Nume" 
+                    required>
+                    <input type="text" name="email" placeholder="Email" 
+                    required>
+                    <input type="text" name="subject" placeholder="Subiect" 
+                    required>
+                    <textarea rows="8" name="message" placeholder="Mesaj"
+                    required></textarea>
+                    <button type="submit" class="hero-btn">
+                    Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h1></h1>
+        <p>© INO TEHNOver srl</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
